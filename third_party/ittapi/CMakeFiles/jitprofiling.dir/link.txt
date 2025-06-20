@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libjitprofiling.a CMakeFiles/jitprofiling.dir/src/ittnotify/jitprofiling.c.o
+/usr/bin/ranlib ../../lib/libjitprofiling.a

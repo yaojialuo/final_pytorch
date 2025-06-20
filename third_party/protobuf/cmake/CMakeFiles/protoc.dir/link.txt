@@ -1,0 +1,2 @@
+/usr/bin/c++  -fvisibility-inlines-hidden -fvisibility=hidden -fvisibility-inlines-hidden -g  -rdynamic -rdynamic -Wl,--no-as-needed CMakeFiles/protoc.dir/__/src/google/protobuf/compiler/main.cc.o -o ../../../bin/protoc-3.13.0.0  -Wl,-rpath,:::::::::::::: ../../../lib/libprotocd.a ../../../lib/libprotobufd.a
+/usr/local/lib/python3.11/dist-packages/cmake/data/bin/cmake -E __run_co_compile --lwyu="ldd;-u;-r" --source=../../../bin/protoc-3.13.0.0
