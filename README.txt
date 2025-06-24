@@ -11,3 +11,5 @@
 
 
 !cd pytorch;cmake -B build -DBUILD_PYTHON=True -DBUILD_TEST=False -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/content/pytorch/torch -DCMAKE_PREFIX_PATH=/usr/local/lib/python3.11/dist-packages -DPython_EXECUTABLE=/usr/bin/python3 -DTORCH_BUILD_VERSION=2.8.0a0+git8fcda2c -DUSE_AUTH_EPHEM=1 -DUSE_CUDA=0 -DUSE_DISTRIBUTED=0 -DUSE_FBGEMM=0 -DUSE_MKLDNN=0 -DUSE_NNPACK=0 -DUSE_NUMPY=True -DUSE_QNNPACK=0 -DUSE_XNNPACK=0 -DCMAKE_VERBOSE_MAKEFILE=ON
+
+!cd /content/pytorch/build; cmake --build . --target install --config Debug -v
