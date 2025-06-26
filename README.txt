@@ -17,3 +17,6 @@
 build c10
 !cd /content/pytorch/build;/usr/bin/gmake  -f confu-deps/cpuinfo/CMakeFiles/cpuinfo.dir/build.make confu-deps/cpuinfo/CMakeFiles/cpuinfo.dir/build
 !cd /content/pytorch/build;/usr/bin/gmake  -f c10/CMakeFiles/c10.dir/build.make c10/CMakeFiles/c10.dir/build
+
+build ATEN_CPU_FILES_GEN_TARGET
+!cd /content/pytorch/build;/usr/bin/gmake  -f caffe2/CMakeFiles/ATEN_CPU_FILES_GEN_TARGET.dir/build.make caffe2/CMakeFiles/ATEN_CPU_FILES_GEN_TARGET.dir/build
