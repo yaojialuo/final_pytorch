@@ -21,9 +21,30 @@ build c10
 build ATEN_CPU_FILES_GEN_TARGET
 !cd /content/pytorch/build;/usr/bin/gmake  -f caffe2/CMakeFiles/ATEN_CPU_FILES_GEN_TARGET.dir/build.make caffe2/CMakeFiles/ATEN_CPU_FILES_GEN_TARGET.dir/build
 
+!cd pytorch;cmake -B build  -DBUILD_PYTHON=True -DBUILD_TEST=False -DCMAKE_BUILD_TYPE=Debug -DCMAKE_INSTALL_PREFIX=/content/pytorch/torch -DCMAKE_PREFIX_PATH=/usr/local/lib/python3.11/dist-packages -DPython_EXECUTABLE=/usr/bin/python3 -DTORCH_BUILD_VERSION=2.8.0a0+git8fcda2c -DUSE_AUTH_EPHEM=1 -DUSE_CUDA=0 -DUSE_DISTRIBUTED=0 -DUSE_FBGEMM=0 -DUSE_MKLDNN=0 -DUSE_NNPACK=0 -DUSE_NUMPY=True -DUSE_QNNPACK=0 -DUSE_XNNPACK=0 -DCMAKE_VERBOSE_MAKEFILE=ON -DUSE_PYTORCH_QNNPACK=0 -DUSE_ITT=0 -DUSE_PROF=0 -DUSE_KINETO=0
+
+
+set "DEBUG=1 USE_DISTRIBUTED=0 USE_MKLDNN=0 USE_CUDA=0 BUILD_TEST=0 USE_FBGEMM=0 USE_NNPACK=0 USE_QNNPACK=0 USE_XNNPACK=0 MAX_JOBS=8" python setup.py develop --cmake
 
 git clone https://github.com/pytorch/pytorch.git
 cd pytorch
 git pull 
+
+
+
+set DEBUG=1
+set USE_DISTRIBUTED=0
+set USE_MKLDNN=0
+set USE_CUDA=0
+set BUILD_TEST=0
+set USE_FBGEMM=0
+set USE_NNPACK=0
+set USE_QNNPACK=0
+set CMAKE_VERBOSE_MAKEFILE=ON
+set DUSE_ITT=0
+set USE_PROF=0
+set USE_KINETO=0
+set MAX_JOBS=4
+ python setup.py develop --cmake
 git submodule sync
 git submodule update --init --recursive
