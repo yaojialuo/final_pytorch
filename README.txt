@@ -45,6 +45,6 @@ set DUSE_ITT=0
 set USE_PROF=0
 set USE_KINETO=0
 set MAX_JOBS=4
- python setup.py develop --cmake
+ python setup.py develop [ --cmake]
 git submodule sync
 git submodule update --init --recursive
