@@ -20,3 +20,10 @@ build c10
 
 build ATEN_CPU_FILES_GEN_TARGET
 !cd /content/pytorch/build;/usr/bin/gmake  -f caffe2/CMakeFiles/ATEN_CPU_FILES_GEN_TARGET.dir/build.make caffe2/CMakeFiles/ATEN_CPU_FILES_GEN_TARGET.dir/build
+
+
+git clone https://github.com/pytorch/pytorch.git
+cd pytorch
+git pull 
+git submodule sync
+git submodule update --init --recursive
