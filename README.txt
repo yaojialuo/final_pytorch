@@ -48,3 +48,11 @@ set MAX_JOBS=4
  python setup.py develop [ --cmake]
 git submodule sync
 git submodule update --init --recursive
+
+下载后打开PCbuild文件夹：
+网上搜索的解决办法是更改python下面include.h里面debug模式下仍引用文python312.lib。但不是根本解决办法。比较好的是在github下载python源码进行编译：
+执行get_externals.bat：
+pc_build.sln
+VS里面直接生成即可，生成目录在\PCbuild\amd64下
+
+
