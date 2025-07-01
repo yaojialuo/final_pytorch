@@ -33,7 +33,7 @@ git pull
 
 
 set DEBUG=1
-set USE_DISTRIBUTED=1
+set USE_DISTRIBUTED=0
 set USE_MKLDNN=0
 set USE_CUDA=0
 set BUILD_TEST=0
