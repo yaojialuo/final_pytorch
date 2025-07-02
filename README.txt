@@ -69,3 +69,6 @@ $USE_PROF = 0
 $USE_KINETO = 0
 $MAX_JOBS = 4
 
+conda info -e
+activate py3.11.13
+
