@@ -55,4 +55,17 @@ git submodule update --init --recursive
 pc_build.sln
 VS里面直接生成即可，生成目录在\PCbuild\amd64下
 
+$DEBUG = 1
+$USE_DISTRIBUTED = 0
+$USE_MKLDNN = 0
+$USE_CUDA = 0
+$BUILD_TEST = 0
+$USE_FBGEMM = 0
+$USE_NNPACK = 0
+$USE_QNNPACK = 0
+$CMAKE_VERBOSE_MAKEFILE = "ON"
+$DUSE_ITT = 0
+$USE_PROF = 0
+$USE_KINETO = 0
+$MAX_JOBS = 4
 
