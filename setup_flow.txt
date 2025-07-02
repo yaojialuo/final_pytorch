@@ -1,0 +1,4 @@
+build_pytorch (c:\Users\yaoji\source\repos\pytorch\tools\build_pytorch_libs.py:86)
+build_deps (c:\Users\yaoji\source\repos\pytorch\setup.py:490)
+main (c:\Users\yaoji\source\repos\pytorch\setup.py:1187)
+<module> (c:\Users\yaoji\source\repos\pytorch\setup.py:1351)
